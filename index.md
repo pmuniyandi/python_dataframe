@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## DataFrame Working Example
 
-You can use the [editor on GitHub](https://github.com/pmuniyandi/python_dataframe/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This page will explain specific dataframe concept using step by step code. Also having youtube link to explain, so that text, code and video will explain the same concept.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Different way to create Panda Series
 
-### Markdown
+Important Parameters of Series data, index, dtype,name, copy Setting/passing data. Setting/changing index. Setting/changing data type. Setting/changing name. How to use copy attribute Creating Series using numpy array Creating Series using dictionary
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+import pandas as pd
+marks = [70,75,90,69,87]
+idx = ["s1","s2","s3","s4","s5"]
+ps = pd.Series(marks,index=idx,dtype="float", copy = False)
+print(ps["s2"],ps[1])
+print(ps.dtype)
+print(ps)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pmuniyandi/python_dataframe/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+print(ps.gt(10))
+ps.describe
+```
