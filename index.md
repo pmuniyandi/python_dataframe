@@ -4,6 +4,8 @@ This page will explain specific dataframe concept using step by step code. Also 
 
 ### Different way to create Panda Series
 
+Introduction to dataframe [https://youtu.be/k9osBqPlO6g] 
+
 Important Parameters of Series data, index, dtype,name, copy Setting/passing data. Setting/changing index. Setting/changing data type. Setting/changing name. How to use copy attribute Creating Series using numpy array Creating Series using dictionary
 
 ```
